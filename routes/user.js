@@ -3,6 +3,10 @@ import express from 'express'
 const userRouter = express.Router()
 
 userRouter.get('/', function(req, res) {
+  res.json({ msg: 'Hello world from express' })
+})
+
+userRouter.post('/', function(req, res) {
   res.send('Hello world from express')
 })
 
